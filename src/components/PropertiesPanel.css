@@ -1,0 +1,105 @@
+/* components/PropertiesPanel.css */
+.properties-panel {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  border: 1px solid #333333;
+}
+
+.properties-panel h3 {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e5e5;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 12px;
+}
+
+.property-group {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.property-group label {
+  width: 80px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #a0a0a0;
+}
+
+.property-value {
+  font-size: 13px;
+  color: #e5e5e5;
+  text-transform: capitalize;
+}
+
+.color-input {
+  width: 50px;
+  height: 32px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px;
+  background: #2a2a2a;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.number-input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #2a2a2a;
+  color: #e5e5e5;
+  transition: all 0.2s;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: #333333;
+}
+
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button {
+  opacity: 0.5;
+}
+
+.no-selection {
+  color: #6b7280;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,56 @@
+/* components/Toolbar.css */
+.toolbar {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  border: 1px solid #333333;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border: 1px solid #404040;
+  background: #2a2a2a;
+  color: #e5e5e5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.toolbar button:hover {
+  background: #3a3a3a;
+  transform: translateY(-1px);
+  border-color: #555555;
+}
+
+.toolbar button.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.toolbar button.active:hover {
+  background: #2563eb;
+}
+
+.toolbar button.primary {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.toolbar button.primary:hover {
+  background: #059669;
+}
+
+.divider {
+  width: 1px;
+  background: #404040;
+  margin: 0 8px;
+}
