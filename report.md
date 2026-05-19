@@ -52,11 +52,6 @@ The core challenge: manage multiple selectable objects with independent transfor
 **Performance**
 - Objects maintain smooth controls
 
-**Usability Testing (simulated)**
-- 3 test users completed: select rect → turn blue → resize → rotate → select circle → turn red
-- Average completion time: 18 seconds
-- Misclicks: 2 instances (both due to small handle hit areas — noted for improvement)
-
 **Known Issues** (from README)
 - Users can create shapes that cover the entire canvas, though the center cannot be moved outside the canvas.
 - The rotation boxes stay in place even though the shape (rectangle) has been rotated in an angle.
