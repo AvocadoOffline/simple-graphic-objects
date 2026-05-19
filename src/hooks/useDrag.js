@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { getCanvasCoords } from '../utils/coordinates';
 import { applyBounds } from '../utils/bounds';
 
+/*
+This calculates the coordinate of shapes before drag and the difference in coordinates to move the shape accordingly.
+*/
 export const useDrag = (element, updateElement, canvasRef) => {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0, elementX: 0, elementY: 0 });

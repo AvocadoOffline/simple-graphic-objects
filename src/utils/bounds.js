@@ -1,3 +1,7 @@
+/*
+This ensures the shape cannot be moved outside the canvas and has a minimum width and height of 20. (Prevent vanishing due to extremely small size)
+*/
+
 export const applyBounds = (element, updates) => {
   let newUpdates = { ...updates };
   

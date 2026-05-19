@@ -1,3 +1,7 @@
+/*
+Random hexcode generator for assignment every time a shape is created by user
+*/
+
 export const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
   let color = '#';

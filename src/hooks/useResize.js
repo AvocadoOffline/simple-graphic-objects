@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { getCanvasCoords } from '../utils/coordinates';
 import { applyBounds } from '../utils/bounds';
 
+/*
+This implements the function of the 8 resizing squares on 8 respective directions for scaling.
+*/
 export const useResize = (element, updateElement, canvasRef) => {
   const [resizeHandle, setResizeHandle] = useState(null);
   const [resizeStart, setResizeStart] = useState({ x: 0, y: 0, startRect: null });

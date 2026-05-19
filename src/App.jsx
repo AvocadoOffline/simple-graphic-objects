@@ -6,6 +6,9 @@ import PropertiesPanel from './components/PropertiesPanel';
 import './App.css';
 import {getRandomColor} from "./utils/colors"
 
+/*
+Manages the elements in the canvas (creation, deletion, update)
+*/
 function App() {
   const [elements, setElements] = useState([]);
   const [selectedId, setSelectedId] = useState(null);

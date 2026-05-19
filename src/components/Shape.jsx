@@ -1,6 +1,8 @@
 // components/Shape.jsx
 import React from 'react';
-
+/*
+Creates the shape (rectangles and circles) by inputting coordinates and colors.
+*/
 const Shape = ({ element, isSelected, onClick, onMouseDown, onResizeStart, onRotateStart }) => {
   const transform = element.rotation ? `rotate(${element.rotation}, ${element.x + element.width/2}, ${element.y + element.height/2})` : '';
   

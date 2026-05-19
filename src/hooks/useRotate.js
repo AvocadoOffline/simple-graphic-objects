@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { getCanvasCoords, getElementCenter } from '../utils/coordinates';
 
+/*
+This calculates the angle for the shape to be rotated using arctan and difference in x, y-coordinates.
+*/
 export const useRotate = (element, updateElement, canvasRef) => {
   const [isRotating, setIsRotating] = useState(false);
   const [rotationStart, setRotationStart] = useState({ angle: 0, startAngle: 0 });

@@ -1,3 +1,7 @@
+/*
+Calculates the cursor's coordinate in the canvas
+*/
+
 export const getCanvasCoords = (e, svgElement) => {
   const pt = svgElement.createSVGPoint();
   pt.x = e.clientX;

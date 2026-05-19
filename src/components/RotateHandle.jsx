@@ -2,6 +2,9 @@
 import React from 'react';
 import { getElementCenter } from '../utils/coordinates';
 
+/*
+This adds the dotted line and rotate control to rotate the selected shape.
+*/
 const RotateHandle = ({ element, onRotateStart }) => {
   const center = getElementCenter(element);
   const distanceFromTop = 35;

@@ -1,5 +1,9 @@
 import React from 'react';
 
+/* 
+Coordinate of canvas starts at top left, (0, 0). Moving downwards = positive, upwards = negative
+This adds the 8 squares on the eight direction of the shape that is selected to be moved.
+*/
 const ResizeHandles = ({ element, onResizeStart }) => {
   const handleSize = 8;
   const handles = [

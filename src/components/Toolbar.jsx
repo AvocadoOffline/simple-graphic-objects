@@ -1,6 +1,10 @@
 import React from 'react';
 import './Toolbar.css';
 
+/* 
+This provides the user a toolbar to switch between selecting and adding shapes.
+*/
+
 const Toolbar = ({ tool, setTool }) => {
   return (
     <div className="toolbar">

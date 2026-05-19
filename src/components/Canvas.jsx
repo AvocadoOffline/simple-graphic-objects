@@ -9,6 +9,9 @@ import { useRotate } from '../hooks/useRotate';
 import { getCanvasCoords } from '../utils/coordinates';
 import './Canvas.css';
 
+/*
+This controls the event listeners when dragging / rotating / resizing and returns the entire canvas.
+*/
 const Canvas = ({ elements, selectedId, setSelectedId, updateElement, tool, onCanvasClick }) => {
   const canvasRef = useRef(null);
   const selectedElement = elements.find(el => el.id === selectedId);
