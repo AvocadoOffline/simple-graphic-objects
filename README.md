@@ -1,16 +1,41 @@
-# React + Vite
+# Micro Design Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, interactive canvas-based design tool for basic shape manipulation. Built with React and SVG.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Move shapes** - Click and drag anywhere on a shape
+- **Resize shapes** - Drag any of the 8 blue resize handles inwards or outwards
+- **Rotate shapes** - Drag the circular ↻ handle or use the slider
+- **Recolor shapes** - Use the color picker in properties panel
+- **Add shapes** - Click toolbar buttons or use draw mode
+- **Delete shapes** - Click delete button
+- **Precise control** - Numeric inputs for position, size, and rotation
 
-## React Compiler
+## Supported Shapes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Shape | Move | Resize | Rotate | Recolor | Delete |
+|-------|------|--------|--------|---------|--------|
+| Rectangle | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Circle | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Clone and Install
+
+```bash
+# Clone the repository
+git clone https://github.com/AvocadoOffline/simple-graphic-objects
+
+# Navigate to project directory
+cd simple-graphic-objects
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
