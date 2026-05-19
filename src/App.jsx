@@ -7,10 +7,7 @@ import './App.css';
 import {getRandomColor} from "./utils/colors"
 
 function App() {
-  const [elements, setElements] = useState([
-    { id: '1', type: 'rect', x: 100, y: 100, width: 100, height: 100, color: '#3b82f6' },
-    { id: '2', type: 'circle', x: 300, y: 200, width: 80, height: 80, color: '#ef4444' },
-  ]);
+  const [elements, setElements] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [tool, setTool] = useState('select');
 

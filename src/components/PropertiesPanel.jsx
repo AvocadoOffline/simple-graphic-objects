@@ -72,7 +72,19 @@ const PropertiesPanel = ({ element, onUpdate, onDelete }) => {
           className="number-input"
         />
       </div>
-      
+      <div className="property-group">
+        <label>Rotation</label>
+        <input
+          type="range"
+          value={element.rotation || 0}
+          onChange={(e) => onUpdate(element.id, { rotation: parseInt(e.target.value) })}
+          min="0"
+          max="360"
+          step="1"
+          className="slider-input"
+        />
+        <span className="value-display">{element.rotation || 0}°</span>
+      </div>
       <button onClick={() => onDelete(element.id)} className="delete-btn">
         Delete Element
       </button>

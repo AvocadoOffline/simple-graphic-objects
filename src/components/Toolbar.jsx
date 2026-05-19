@@ -22,7 +22,6 @@ const Toolbar = ({ tool, setTool }) => {
       >
         Circle
       </button>
-      <div className="divider"></div>
     </div>
   );
 };

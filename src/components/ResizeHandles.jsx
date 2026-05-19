@@ -1,4 +1,3 @@
-// components/ResizeHandles.jsx
 import React from 'react';
 
 const ResizeHandles = ({ element, onResizeStart }) => {
